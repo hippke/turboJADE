@@ -59,7 +59,8 @@ plt.show()
 
 
 ### Installation
-For now, just download the ``turboJADE.py`` file. Open an issue to request a pip installable package if that's useful.
+For now, just download the ``turboJADE.py`` file. Open an [issue](https://github.com/hippke/turboJADE/issues) to request a pip installable package if that's useful.
+
 Requirements: ``pip install numpy numba tqdm matplotlib``
 
 ### Attribution
