@@ -62,4 +62,10 @@ plt.show()
 For now, just download the ``turboJADE.py`` file. Open an issue to request a pip installable package if that's useful.
 
 ### Attribution
-tbd
+Please cite [tbd](http) if you find this code useful in your research. The BibTeX entry for the paper is:
+
+```
+@ARTICLE{
+}
+```
+
