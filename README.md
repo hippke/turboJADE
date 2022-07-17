@@ -26,11 +26,11 @@ from turboJADE import turboJADE
 solver = turboJADE(
     func=rastrigin,
     limits=[(-5.12, 5.12), (-5.12, 5.12)],
-    n_dim=2,  # Number of dimension
-    n_pop=100,  # Population size
-    c=0.1,  # Self-adaption rate
+    n_dim=2,        # Number of dimension
+    n_pop=100,      # Population size
+    c=0.1,          # Self-adaption rate
     progress=True,  # Print tqdm progress bar
-    converge=True  # Stop after 200 iterations without change
+    converge=True   # Stop after 200 iterations without change
     )
 best, trend, evals = solver.run(n_it=1_000)  # Run for 1000 iterations
 ```
