@@ -11,7 +11,7 @@ Define a function to maximize (invert if you wish to minimize):
 import numpy as np
 from numba import jit
 
-@jit  # has to be numba jitted
+@jit  # Has to be numba jitted
 def rastrigin(p):
     x, y = p[0], p[1]
     return -(
