@@ -3,7 +3,7 @@
 
 Text
 
-Performance:
+Performance: One million steps per second per core (Intel Core i7-1185G), if function evaluations are cheap.
 
 Functionr requirements:
 - Added decorator for numba jit
