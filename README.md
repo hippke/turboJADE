@@ -9,7 +9,7 @@ Performance: One million steps per second per core (Intel Core i7-1185G), if fun
 
 
 ### Complete example
-Define a function to maximize (invert if you wish to minimize):
+Define a function to maximize:
 ```
 import numpy as np
 from numba import jit
@@ -17,7 +17,7 @@ from numba import jit
 @jit  # Has to be numba jitted
 def rastrigin(p):
     x, y = p[0], p[1]
-    return -(
+    return -(  # invert as we wish to minimize
         20
         + (x**2 - 10 * np.cos(2 * np.pi * x))
         + (y**2 - 10 * np.cos(2 * np.pi * y))
