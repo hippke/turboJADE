@@ -60,6 +60,7 @@ plt.show()
 
 ### Installation
 For now, just download the ``turboJADE.py`` file. Open an issue to request a pip installable package if that's useful.
+Requirements: ``pip install numpy numba tqdm matplotlib``
 
 ### Attribution
 Please cite [tbd](http) if you find this code useful in your research. The BibTeX entry for the paper is:
