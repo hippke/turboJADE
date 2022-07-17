@@ -1,12 +1,18 @@
 ![Logo](https://github.com/hippke/turboJADE/blob/main/logo.png?raw=true)
 ## Fast Adaptive Differential Evolution in pure Python
 
-Text
+Lean 
+
+Implements the algorithm by [Zhang & Sanderson (2009)](https://ieeexplore.ieee.org/document/5208221). Inspired by [PyFDE](https://pythonhosted.org/PyFDE/), which is a similar JADE implementation in Cython.
+
+Performance: One million steps per second per core (Intel Core i7-1185G), if function evaluations are cheap.
+- Just-in-time compilation with numba
+- Fast random-number generation
+- Minimal overhead due to limited scope
+
 
 ### Complete example
-
 Define a function to maximize (invert if you wish to minimize):
-
 ```
 import numpy as np
 from numba import jit
@@ -44,7 +50,6 @@ x, y = 0.00, -0.00 (expected: 0.00, 0.00)
 func = 0.00
 Model evaluations: 10000
 ```
-
 Visualize convergence:
 ```
 import matplotlib.pyplot as plt
@@ -55,4 +60,9 @@ plt.show()
 ```
 ![convergence](https://github.com/hippke/turboJADE/blob/main/converge.png?raw=true)
 
-Performance: One million steps per second per core (Intel Core i7-1185G), if function evaluations are cheap.
+
+### Installation
+For now, just download the ``turboJADE.py`` file. Open an issue to request a pip installable package if that's useful.
+
+### Attribution
+tbd
