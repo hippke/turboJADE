@@ -1,8 +1,5 @@
 ![Logo](https://github.com/hippke/turboJADE/blob/main/logo.png?raw=true)
 ## Fast Adaptive Differential Evolution in pure Python
-
-Lean 
-
 Implements the algorithm by [Zhang & Sanderson (2009)](https://ieeexplore.ieee.org/document/5208221). Inspired by [PyFDE](https://pythonhosted.org/PyFDE/), which is a similar JADE implementation in Cython.
 
 Performance: One million steps per second per core (Intel Core i7-1185G), if function evaluations are cheap.
