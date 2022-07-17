@@ -95,17 +95,13 @@ class turboJADE:
         self.progress = progress
         self.batch_id = batch_id
         self.converge = converge
+        self.cr_arr = np.empty(n_pop)
+        self.f_arr = np.empty(n_pop)
+        self.func = func
         self.converge_iters = 200
-
         self.p = 0.1
         self.cr = 0.5
         self.f = 0.5
-        self.cr_arr = np.empty(n_pop)
-        self.f_arr = np.empty(n_pop)
-
-        self.func = func
-        self.f = 0.7
-        self.cr = 0.95
         limits = [limits] * n_dim
         self.limits = np.array(limits)
         n_dim = len(self.limits)
