@@ -2,7 +2,7 @@
 ## Fast Adaptive Differential Evolution in pure Python
 Implements the algorithm by [Zhang & Sanderson (2009)](https://ieeexplore.ieee.org/document/5208221). Inspired by [PyFDE](https://pythonhosted.org/PyFDE/), which is a similar JADE implementation in Cython.
 
-Performance: One million steps per second per core (Intel Core i7-1185G), if function evaluations are cheap.
+Performance: One million evals per second per core (Intel Core i7-1185G), if function evaluations are cheap.
 - Just-in-time compilation with numba
 - Fast random-number generation
 - Minimal overhead due to limited scope
