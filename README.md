@@ -10,7 +10,6 @@ Define a function to maximize (invert if you wish to minimize). Decorate with @j
 ```
 import numpy as np
 from numba import jit
-from turboJADE import turboJADE
 
 @jit
 def rastrigin(p):
@@ -24,6 +23,7 @@ def rastrigin(p):
 ```
 Call turboJADE:
 ```
+from turboJADE import turboJADE
 solver = turboJADE(
     func=rastrigin,
     limits=[(-5.12, 5.12), (-5.12, 5.12)],
