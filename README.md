@@ -26,7 +26,7 @@ from turboJADE import turboJADE
 solver = turboJADE(
     func=rastrigin,
     limits=[(-5.12, 5.12), (-5.12, 5.12)],
-    n_dim=2,        # Number of dimension
+    n_dim=2,        # Number of dimensions
     n_pop=100,      # Population size
     c=0.1,          # Self-adaption rate
     progress=True,  # Print tqdm progress bar
