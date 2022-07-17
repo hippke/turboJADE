@@ -20,7 +20,7 @@ def rastrigin(p):
         + (y**2 - 10 * np.cos(2 * np.pi * y))
     )
 ```
-Call turboJADE:
+Run turboJADE:
 ```
 from turboJADE import turboJADE
 solver = turboJADE(
@@ -53,6 +53,6 @@ plt.xlabel("Iteration number")
 plt.ylabel("Function value")
 plt.show()
 ```
-
+![convergence](https://github.com/hippke/turboJADE/blob/main/converge.png?raw=true)
 
 Performance: One million steps per second per core (Intel Core i7-1185G), if function evaluations are cheap.
